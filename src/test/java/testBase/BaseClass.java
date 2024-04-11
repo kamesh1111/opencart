@@ -114,7 +114,7 @@ public class BaseClass
 		
 		
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get(p.getProperty("appURL"));
 		driver.manage().window().maximize();
