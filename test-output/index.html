@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\JavaClass\opencart\mastersuite.xml</span>
+                    <span>D:\JavaClass\opencart-release1\opencart-new\final.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -156,7 +156,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\JavaClass\opencart\mastersuite.xml</span>
+            <span class="header-content">D:\JavaClass\opencart-release1\opencart-new\final.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -165,12 +165,14 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
-      &lt;include name=&quot;master&quot;/&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
   &lt;groups&gt;
     &lt;run&gt;
-      &lt;include name=&quot;master&quot;/&gt;
+      &lt;include name=&quot;sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
   &lt;listeners&gt;
@@ -253,16 +255,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_account_registration')
 data.setCell(0, 2, 'testCases.TC_001_AccountRegistrationTest')
-data.setCell(0, 3, 5760);
+data.setCell(0, 3, 4156);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verify_login')
 data.setCell(1, 2, 'testCases.TC_002_LoginTest')
-data.setCell(1, 3, 2751);
+data.setCell(1, 3, 1721);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -295,26 +297,26 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_account_registration</span>
-                <span class="method-start">35234 ms</span>
+                <span class="method-start">32744 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">41058 ms</span>
+                <span class="method-start">36973 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_002_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Windows, chrome)</span>
-                <span class="method-start">41967 ms</span>
+                <span class="method-start">38170 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_login</span>
-                <span class="method-start">51830 ms</span>
+                <span class="method-start">50368 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">54581 ms</span>
+                <span class="method-start">52097 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
